@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Card from './component/Card'
+import barbados from './Barbados_beach.jpg'
+import palenque from './palenque.jpg'
 import './App.css';
 
-function App() {
+const App = () => {
+  const a ='Chiapas';
+  const b ='5';
+  const c ='Palenque'
+  // JSX => Implementacion a JS
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="text-red">Hola React</h1>
+      <h2>Mi primer react</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adip</p>
+      <Card image={barbados} title= 'Barbados' score='3' address='Playa de Barbados' />
+      <Card image={barbados} title= {a} score={b} address={c} superhost />
     </div>
   );
 }
